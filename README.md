@@ -18,3 +18,4 @@ A responsive and interactive React-based event planner application that allows u
 - **Frontend**: React, React Router
 - **Styling**: CSS Modules with theme-based CSS variables
 - **Icons**: React Icons and SVGs from svgrepo.com
+Made by Sean & Felipe
