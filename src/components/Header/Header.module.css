@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--navbar-background-color);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.centerSection {
+  flex-grow: 1;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks li {
+  display: inline-block;
+}
+
+.navLinks li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navLinks li a:hover,
+.activeLink {
+  background-color: var(--link-hover-bg);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  fill: #f5f5f5;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  fill: var(--icon-hover-color);
+}
+
+.themeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.signInBtn,
+.registerBtn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.signInBtn {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.signInBtn:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.registerBtn {
+  background-color: var(--button-background-color);
+  color: (var)--button-text-color;
+}
+
+.registerBtn:hover {
+  background-color: var(--button-hover-background-color);
+}

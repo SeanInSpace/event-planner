@@ -1,0 +1,41 @@
+/* src/pages/WeeklySchedule.module.css */
+
+.scheduleContainer {
+  padding: 20px 30px;
+  overflow-x: auto;
+}
+
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+  height: 60px;
+}
+
+.scheduleTable th {
+  background-color: var(--header-background);
+  color: #fff;
+}
+
+.timeCell {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.scheduleCell {
+  background-color: var(--card-background);
+  transition: background-color 0.3s ease;
+}
+
+.scheduleCell:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}

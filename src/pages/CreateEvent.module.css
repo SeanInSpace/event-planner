@@ -1,0 +1,102 @@
+/* src/pages/CreateEvent.module.css */
+
+.createEventContainer {
+  display: flex;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.formContainer {
+  flex: 2;
+}
+
+.summarySidebar {
+  flex: 1;
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 5px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.summarySidebar h3 {
+  margin-top: 0;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+.step h2 {
+  margin-bottom: 10px;
+}
+
+.step label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.step input[type="text"],
+.step input[type="number"],
+.step input[type="url"],
+.step select,
+.step input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigationButtons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navigationButtons button:hover {
+  background-color: #e04350;
+}
+
+.categories input {
+  width: calc(100% - 100px);
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.categories button {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.categories button:hover {
+  background-color: #e04350;
+}
+
+.summarySidebar button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.summarySidebar button:hover {
+  background-color: #e04350;
+}

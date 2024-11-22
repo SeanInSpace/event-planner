@@ -1,0 +1,46 @@
+/* src/themes.css */
+
+:root {
+  /* Light Theme Colors */
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #ff4b5c;
+  /* Red */
+  --header-background: var(--primary-color);
+  --card-background: #f9f9f9;
+  --footer-background: #f1f1f1;
+  --link-hover-bg: rgba(0, 0, 0, 0.1);
+  /* Light theme hover */
+  --icon-hover-color: #ffd700;
+  /* Gold */
+  --button-text-color: #ffffff;
+  --button-background-color: var(--primary-color);
+  --button-hover-background-color: #e04350;
+}
+
+body.dark {
+  /* Dark Theme Colors */
+  --background-color: #2e2e2e;
+  /* Soft Gray */
+  --text-color: #ffffff;
+  --primary-color: #bb86fc;
+  /* Purple */
+  --header-background: var(--primary-color);
+  --card-background: #3c3c3c;
+  --footer-background: #1f1f1f;
+  --link-hover-bg: rgba(255, 255, 255, 0.2);
+  /* Dark theme hover */
+  --icon-hover-color: #ffd700;
+  /* Gold */
+  --button-text-color: #000000;
+  --button-background-color: #ffffff;
+  --button-hover-background-color: #cccccc;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

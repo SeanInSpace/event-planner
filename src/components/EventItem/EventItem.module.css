@@ -1,0 +1,33 @@
+/* src/components/EventItem/EventItem.module.css */
+
+.eventCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.eventCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eventDetails h3 {
+  margin: 0 0 5px 0;
+}
+
+.bookmarkIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: var(--primary-color);
+  transition: fill 0.3s ease;
+}
+
+.bookmarkIcon:hover {
+  fill: var(--icon-hover-color);
+}
