@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/event-planner/static/css/main.ca18d97a.css",
+    "main.js": "/event-planner/static/js/main.7de2f4e6.js",
+    "static/media/gear.svg": "/event-planner/static/media/gear.50b68a0e5d5b4767d0728387ead58d74.svg",
+    "static/media/printer.svg": "/event-planner/static/media/printer.56f4418f056827d2883ba3c3740a564a.svg",
+    "static/media/inbox.svg": "/event-planner/static/media/inbox.b2ebcb9dada47004bc6c1f9c1e808a7d.svg",
+    "static/media/filter.svg": "/event-planner/static/media/filter.2e111f8a694f1ea60224e6d5e273743c.svg",
+    "index.html": "/event-planner/index.html",
+    "static/media/moon.svg": "/event-planner/static/media/moon.dce061275b0676685df8869a5c03da07.svg",
+    "static/media/bookmark.svg": "/event-planner/static/media/bookmark.bf5f48159301a78331dfdf0b76115303.svg",
+    "static/media/clock.svg": "/event-planner/static/media/clock.d0f270598c6122896db7f00d0fa736d6.svg",
+    "main.ca18d97a.css.map": "/event-planner/static/css/main.ca18d97a.css.map",
+    "main.7de2f4e6.js.map": "/event-planner/static/js/main.7de2f4e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca18d97a.css",
+    "static/js/main.7de2f4e6.js"
+  ]
+}
