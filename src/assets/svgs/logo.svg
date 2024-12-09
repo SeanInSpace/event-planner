@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #000;
+      }
+
+      .cls-4 {
+        fill: #524fa1;
+        stroke: #524fa1;
+      }
+
+      .cls-4, .cls-5, .cls-2, .cls-3, .cls-6, .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-5, .cls-3, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 5px;
+      }
+
+      .cls-5 {
+        fill: #f15a22;
+        stroke: #f15a24;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-6 {
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #6dc8bf;
+        stroke: #6dc8bf;
+      }
+
+      .cls-8 {
+        fill: #fdb913;
+        stroke: #fdb913;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-2" x="304.5" y="338.5" width="382" height="377" rx="74.55" ry="74.55"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <g>
+      <rect class="cls-4" x="337.5" y="573.5" width="158" height="37" rx="18.5" ry="18.5"/>
+      <rect class="cls-7" x="337.5" y="521.5" width="158" height="37" rx="18.5" ry="18.5"/>
+      <rect class="cls-8" x="337.5" y="469.5" width="158" height="37" rx="18.5" ry="18.5"/>
+      <rect class="cls-5" x="337.5" y="417.5" width="158" height="37" rx="18.5" ry="18.5"/>
+    </g>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <circle class="cls-1" cx="545.5" cy="512.5" r="116"/>
+      <g>
+        <path class="cls-1" d="M545,505.5"/>
+        <rect class="cls-1" x="531" y="453" width="18.88" height="78" rx="7" ry="7"/>
+        <path class="cls-1" d="M531,509.26c0-2.56,0,8.38,0,10.23v2.56c0,4.94,4.23,8.95,9.44,8.95h44.11c5.21,0,9.44-4.01,9.44-8.95v-2.56c0-4.94-4.23-8.95-9.44-8.95h-35.61"/>
+      </g>
+    </g>
+    <g>
+      <circle class="cls-3" cx="545.5" cy="512.5" r="116"/>
+      <g>
+        <path class="cls-6" d="M545,505.5"/>
+        <rect class="cls-2" x="531" y="453" width="18.88" height="78" rx="7" ry="7"/>
+        <path class="cls-6" d="M531,509.26c0-2.56,0,8.38,0,10.23v2.56c0,4.94,4.23,8.95,9.44,8.95h44.11c5.21,0,9.44-4.01,9.44-8.95v-2.56c0-4.94-4.23-8.95-9.44-8.95h-35.61"/>
+      </g>
+    </g>
+    <g>
+      <circle class="cls-6" cx="545.5" cy="512.5" r="116"/>
+      <g>
+        <path class="cls-6" d="M545,505.5"/>
+        <rect class="cls-6" x="531" y="453" width="18.88" height="78" rx="7" ry="7"/>
+        <path class="cls-6" d="M531,509.26c0-2.56,0,8.38,0,10.23v2.56c0,4.94,4.23,8.95,9.44,8.95h44.11c5.21,0,9.44-4.01,9.44-8.95v-2.56c0-4.94-4.23-8.95-9.44-8.95h-35.61"/>
+      </g>
+    </g>
+  </g>
+</svg>
