@@ -1,7 +1,6 @@
 .dashboardContainer {
   display: flex;
   height: calc(100vh - 70px);
-  /* Adjust based on header height */
   background-color: var(--background-color);
   color: var(--text-color);
   padding: 20px;
@@ -116,27 +115,20 @@
 .calendar {
   margin-top: 10px;
   width: 100%;
-  /* Full width of the container */
   height: 400px;
-  /* Set a larger height */
   display: flex;
   justify-content: center;
-  /* Center the calendar horizontally */
   align-items: center;
-  /* Center the calendar vertically */
 }
 
 .calendar .react-datepicker {
   font-size: 1.2em;
-  /* Increase the font size of the calendar for better readability */
   width: 100%;
-  /* Ensure it fills the parent container */
   height: auto;
 }
 
 .largeCalendar {
   transform: scale(2.3);
-  /* Magnifies the calendar */
 }
 
 .calendarSection {
@@ -152,17 +144,13 @@
 .headerRow {
   display: flex;
   justify-content: space-between;
-  /* Space between title and icons */
   align-items: center;
-  /* Align vertically */
   margin-bottom: 20px;
-  /* Add spacing below */
 }
 
 .iconRow {
   display: flex;
   gap: 10px;
-  /* Adjust spacing between icons */
 }
 
 .icon {
