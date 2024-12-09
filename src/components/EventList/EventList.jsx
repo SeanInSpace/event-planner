@@ -7,22 +7,22 @@ const events = [
   {
     id: 1,
     title: 'Computer Science Meeting',
-    description: 'Everyone is invited to the meeting this Monday. Room 109 at 6:30.',
+    description: 'Everyone is always invited to the meeting.',
   },
   {
     id: 2,
-    title: 'React Workshop',
-    description: 'Join us for an in-depth React workshop. Learn hooks, state management, and more!',
+    title: 'Front-end Frameworks Presentation',
+    description: 'Currently displaying my presentation, you are invited to read this.',
   },
   {
     id: 3,
-    title: 'Networking Event',
-    description: 'Expand your professional network at our monthly networking event.',
+    title: 'Filler content',
+    description: 'This is filler content for the event list.',
   },
   {
     id: 4,
-    title: 'Web Development Conference',
-    description: 'Stay updated with the latest trends in web development.',
+    title: 'React Workshop',
+    description: 'Join us for an in-depth React workshop. Learn hooks, state management, and more!',
   },
 ];
 

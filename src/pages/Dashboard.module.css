@@ -135,7 +135,7 @@
 }
 
 .largeCalendar {
-  transform: scale(1.6);
+  transform: scale(2.3);
   /* Magnifies the calendar */
 }
 
@@ -149,10 +149,20 @@
   color: var(--text-color);
 }
 
-.iconRow {
+.headerRow {
   display: flex;
   justify-content: space-between;
+  /* Space between title and icons */
+  align-items: center;
+  /* Align vertically */
   margin-bottom: 20px;
+  /* Add spacing below */
+}
+
+.iconRow {
+  display: flex;
+  gap: 10px;
+  /* Adjust spacing between icons */
 }
 
 .icon {
@@ -248,4 +258,20 @@
 .itemRight {
   font-size: 18px;
   color: var(--text-color);
+}
+
+.viewAllLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.viewAllLink:hover {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
 }

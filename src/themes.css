@@ -16,6 +16,7 @@
   --button-text-color: #ffffff;
   --button-background-color: var(--primary-color);
   --button-hover-background-color: #e04350;
+  --divider-color: #000;
 }
 
 body.dark {
@@ -35,6 +36,7 @@ body.dark {
   --button-text-color: #000000;
   --button-background-color: #ffffff;
   --button-hover-background-color: #cccccc;
+  --divider-color: #fff;
 }
 
 body {
