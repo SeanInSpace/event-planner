@@ -35,6 +35,7 @@ const CreateEvent = () => {
 
   const handleNext = () => setStep((prev) => prev + 1);
   const handleBack = () => setStep((prev) => prev - 1);
+  const goToStep = (targetStep) => setStep(targetStep);
 
   const handleChange = (e) => {
     const { name, value, type, checked, files } = e.target;
@@ -72,6 +73,7 @@ const CreateEvent = () => {
     // Handle form submission
     console.log(eventData);
     alert('Event Created Successfully!');
+    // You can integrate API calls here
   };
 
   return (
@@ -281,14 +283,15 @@ const CreateEvent = () => {
             <div className={styles.categories}>
               <h4>Categories:</h4>
               {eventData.categories.map((category, index) => (
-                <input
-                  key={index}
-                  type="text"
-                  value={category}
-                  onChange={(e) => handleCategoryChange(index, e.target.value)}
-                  placeholder={`Category ${index + 1}`}
-                  required
-                />
+                <div key={index} className={styles.categoryItem}>
+                  <input
+                    type="text"
+                    value={category}
+                    onChange={(e) => handleCategoryChange(index, e.target.value)}
+                    placeholder={`Category ${index + 1}`}
+                    required
+                  />
+                </div>
               ))}
               <button onClick={handleCategoryAdd}>+ Add Category</button>
             </div>
@@ -300,42 +303,42 @@ const CreateEvent = () => {
         )}
         {step === 5 && (
           <div className={styles.step}>
-            <h2>Step 5: Tasks and Vendors</h2>
-            <div className={styles.tasks}>
-              <h4>Tasks:</h4>
-              <ul>
-                {eventData.tasks.map((task, index) => (
-                  <li key={index}>{task}</li>
-                ))}
-              </ul>
-              {/* Option to add custom tasks can be implemented here */}
-            </div>
-            <div className={styles.vendors}>
-              <h4>Vendors:</h4>
-              {/* Implement vendor selection or addition */}
-            </div>
-            <div className={styles.navigationButtons}>
-              <button onClick={handleBack}>Back</button>
-              <button onClick={handleNext}>Next</button>
-            </div>
-          </div>
-        )}
-        {step === 6 && (
-          <div className={styles.step}>
-            <h2>Step 6: Review and Finalize</h2>
-            <div className={styles.review}>
-              <h3>Event Summary</h3>
+            <h2>Step 5: Review and Edit</h2>
+            <div className={styles.reviewSection}>
+              <h3>Event Basics</h3>
               <p><strong>Name:</strong> {eventData.name}</p>
               <p><strong>Type:</strong> {eventData.type === 'Custom' ? eventData.customType : eventData.type}</p>
               <p><strong>Description:</strong></p>
               <div dangerouslySetInnerHTML={{ __html: eventData.description }} />
+              <p><strong>Cover Image:</strong> {eventData.coverImage ? eventData.coverImage.name : 'No image uploaded'}</p>
+              <button onClick={() => goToStep(1)}>Edit</button>
+
+              <h3>Date and Location</h3>
               <p><strong>Start:</strong> {eventData.startDate.toString()}</p>
               <p><strong>End:</strong> {eventData.endDate.toString()}</p>
               <p><strong>Venue Address:</strong> {eventData.venueAddress}</p>
               {eventData.isOnline && <p><strong>Online Link:</strong> {eventData.onlineLink}</p>}
+              <p><strong>Location Note:</strong> {eventData.locationNote}</p>
+              <button onClick={() => goToStep(2)}>Edit</button>
+
+              <h3>Guests</h3>
               <p><strong>Guest Count:</strong> {eventData.guestCount}</p>
-              <p><strong>Budget:</strong> ${eventData.budget}</p>
-              {/* Add more summary fields as needed */}
+              <p><strong>RSVP Enabled:</strong> {eventData.rsvp ? 'Yes' : 'No'}</p>
+              {eventData.rsvp && (
+                <p><strong>Dietary Restrictions:</strong> {eventData.dietaryRestrictions}</p>
+              )}
+              <p><strong>Guest List:</strong> {eventData.guestList.length > 0 ? `${eventData.guestList.length} guests imported` : 'No guest list uploaded'}</p>
+              <button onClick={() => goToStep(3)}>Edit</button>
+
+              <h3>Budget</h3>
+              <p><strong>Total Budget:</strong> ${eventData.budget}</p>
+              <p><strong>Categories:</strong></p>
+              <ul>
+                {eventData.categories.map((category, index) => (
+                  <li key={index}>{category}</li>
+                ))}
+              </ul>
+              <button onClick={() => goToStep(4)}>Edit</button>
             </div>
             <div className={styles.navigationButtons}>
               <button onClick={handleBack}>Back</button>
@@ -351,7 +354,7 @@ const CreateEvent = () => {
         <p><strong>Location:</strong> {eventData.isOnline ? 'Online Event' : eventData.venueAddress}</p>
         <p><strong>Guest Count:</strong> {eventData.guestCount}</p>
         <p><strong>Budget:</strong> ${eventData.budget}</p>
-        <p><strong>Tasks Remaining:</strong> {eventData.tasks.length}</p>
+        <p><strong>Categories:</strong> {eventData.categories.length}</p>
         <button onClick={() => window.print()}>Print Summary</button>
       </aside>
     </div>

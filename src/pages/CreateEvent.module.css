@@ -68,10 +68,23 @@
   background-color: #e04350;
 }
 
-.categories input {
-  width: calc(100% - 100px);
+.categories {
+  margin-top: 15px;
+}
+
+.categories h4 {
+  margin-bottom: 10px;
+}
+
+.categoryItem {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.categoryItem input {
+  flex: 1;
   padding: 8px;
-  margin-right: 10px;
+  box-sizing: border-box;
 }
 
 .categories button {
@@ -99,4 +112,32 @@
 
 .summarySidebar button:hover {
   background-color: #e04350;
+}
+
+.reviewSection {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.reviewSection h3 {
+  margin-top: 20px;
+}
+
+.reviewSection p {
+  margin: 5px 0;
+}
+
+.reviewSection button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.reviewSection button:hover {
+  background-color: #c0392b;
 }
