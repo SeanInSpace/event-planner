@@ -58,9 +58,9 @@
 }
 
 .logo {
-  scale: 200%;
-  width: 100px;
-  height: 100px;
+  scale: 100%;
+  width: 65px;
+  height: auto;
   cursor: pointer;
   fill: #f5f5f5;
   transition: fill 0.3s ease;
