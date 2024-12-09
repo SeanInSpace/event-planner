@@ -1,6 +1,8 @@
 /* src/pages/WeeklySchedule.module.css */
 
 .scheduleContainer {
+  position: relative;
+  /* To position the context menu relative to this container */
   padding: 20px 30px;
   overflow-x: auto;
 }
@@ -17,6 +19,8 @@
   text-align: center;
   min-width: 100px;
   height: 60px;
+  position: relative;
+  /* To assist with positioning if needed */
 }
 
 .scheduleTable th {
@@ -38,4 +42,29 @@
 .scheduleCell:hover {
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+/* Context Menu Styles */
+.contextMenu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contextMenuButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contextMenuButton:hover {
+  background-color: darken(var(--primary-color), 10%);
 }
